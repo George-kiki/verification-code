@@ -143,10 +143,6 @@ export default class ValidateCode {
   }
 }
 
-const code = new ValidateCode(document.getElementById('canvas'), (code: string) => {
-  console.log(code);
-});
-
 
 
 
