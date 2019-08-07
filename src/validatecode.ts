@@ -3,33 +3,33 @@
 // ...
 
 export default class ValidateCode {
-  lineWidth?: number;
-  lineCount?: number;
-  dotNum?: number;
-  dotR?: number;
-  foregroundColor?: Array<number>;
-  backgroundColor?: Array<number>;
-  fontSize?: number;
-  fontFamily?: string;
-  fontStyle?: string;
-  validateCode?: string;
-  len?: number;
+  lineWidth: number;
+  lineCount: number;
+  dotNum: number;
+  dotR: number;
+  foregroundColor: Array<number>;
+  backgroundColor: Array<number>;
+  fontSize: number;
+  fontFamily: string;
+  fontStyle: string;
+  validateCode: string;
+  len: number;
   canvas: any;
   paint: any;
   callback: any;
 
-  constructor(dom: any, callback: Function) {
+  constructor(dom: any, callback: Function, fonsSize?: number,len?: number) {
     this.lineWidth = 0.5;
     this.lineCount = 6;
     this.dotNum = 10;
     this.dotR = 1.5;
     this.foregroundColor = [20, 50];
     this.backgroundColor = [150, 255];
-    this.fontSize = 22; // 字体大小
+    this.fontSize = fonsSize || 22;
     this.fontFamily = 'Georgia, serif';
     this.fontStyle = 'fill';
-    this.validateCode = 'abcdefhijkmnpwxyABCDEFGHJKMNPQWXY123457890';
-    this.len = 5;
+    this.validateCode = 'abcdefhijkmnpwxyzABCDEFGHJKMNPQWXYZ123457890';
+    this.len = len ||　5;
     this.callback = null;
     this.canvas = dom;
     this.paint = null;
@@ -45,7 +45,7 @@ export default class ValidateCode {
       this.refresh()
     };
     let colors = this.getColor(this.backgroundColor);
-    this.paint.fillStyle = `rgba(${colors[0]},${colors[1]},${colors[2]},.4)`;
+    this.paint.fillStyle = `rgb(255,${colors[1]},${colors[2]})`;
     this.paint.fillRect(0, 0, this.canvas.width, this.canvas.height);
     this.arc();
     this.line();
@@ -65,7 +65,7 @@ export default class ValidateCode {
   };
 
   line() {
-    for (let i = 0; i < this.lineCount!; i++) {
+    for (let i = 0; i < this.lineCount; i++) {
       let x = ValidateCode.getRand(0, this.canvas.width);
       let y = ValidateCode.getRand(0, this.canvas.height);
       let endX = ValidateCode.getRand(0, this.canvas.width);
@@ -82,7 +82,7 @@ export default class ValidateCode {
   };
 
   arc() {
-    for (let i = 0; i < this.dotNum!; i++) {
+    for (let i = 0; i < this.dotNum; i++) {
       let x = ValidateCode.getRand(0, this.canvas.width);
       let y = ValidateCode.getRand(0, this.canvas.height);
       this.paint.beginPath();
@@ -96,9 +96,9 @@ export default class ValidateCode {
 
   getValidateCode() {
     let str = '';
-    let codeLength = this.validateCode!.length;
-    for (let i = 0; i < this.len!; i++) {
-      str += this.validateCode![ValidateCode.getRand(0, codeLength)]
+    let codeLength = this.validateCode.length;
+    for (let i = 0; i < this.len; i++) {
+      str += this.validateCode[ValidateCode.getRand(0, codeLength)]
     }
     return str;
   }
@@ -110,12 +110,12 @@ export default class ValidateCode {
     this.paint.textBaseline = 'middle';
     let fontStyle = `${this.fontStyle}Text`;
     let colorStyle = `${this.fontStyle}Style`;
-    for (let i = 0; i < this.len!; i++) {
+    for (let i = 0; i < this.len; i++) {
       let fontWidth = this.paint.measureText(str[i]).width;
-      let x = ValidateCode.getRand(this.canvas.width / this.len! * i, (this.canvas.width / this.len!) * i + fontWidth / 2);
+      let x = ValidateCode.getRand(this.canvas.width / this.len * i, (this.canvas.width / this.len) * i + fontWidth / 2);
       let deg = ValidateCode.getRand(-5, 5);
       let colors = this.getColor(this.foregroundColor);
-      this.paint[colorStyle] = `rgba(${colors[0]},${colors[1]},${colors[2]},.6)`;
+      this.paint[colorStyle] = `rgb(${colors[0]},${colors[1]},${colors[2]})`;
       this.paint.save();
       this.paint.rotate(deg * Math.PI / 180);
       this.paint[fontStyle](str[i], x, this.canvas.height / 2);
