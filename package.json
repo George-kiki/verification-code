@@ -1,6 +1,6 @@
 {
   "name": "validatecode",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "dist/validatecode.umd.js",
@@ -9,10 +9,10 @@
   "files": [
     "dist"
   ],
-  "author": "ae123330 <gg5201314>",
+  "author": "George_kiki <504110744@qq.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/George-kiki/validate-code"
   },
   "license": "MIT",
   "engines": {
