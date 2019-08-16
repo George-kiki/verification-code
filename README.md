@@ -1,4 +1,4 @@
-# canvas-verification-code
+# canvas verificationCode
 
 
 ## Installation
