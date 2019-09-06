@@ -32,6 +32,6 @@ let validateCode = new ValidateCode(canvas, (code) => {
 - `len` validateCode length
 
 ### verification code
-![布局](https://my-data-api.oss-cn-hongkong.aliyuncs.com/code.png?Expires=1566699717&OSSAccessKeyId=TMP.hXaFELgXvkEiJWdAa5zmDvmSMRPkBVrzSNeYikXbyg5S4xesNjWPGMVKJkFMM3k4cvzoGTgDWWxpYEu2Sx2vM1tuyjQhnJa94yPe7MZU8Wh2GF9k6cDNnMbCkXFDKp.tmp&Signature=AcDKVVVll0n7LTD%2BE8QdO318HDw%3D)
+![布局](https://my-data-api.oss-cn-hongkong.aliyuncs.com/code.png?Expires=1567831706&OSSAccessKeyId=TMP.hVZhSKirDvXhvo3ym1ChnCHxx9BVKAT9KvtUM9VnZiNutvYNZDwbhT5qu5aBkMwM6C2vK1s9nqU2MZGABDTDW2um3Mi1mssrc91TU96Yh63nUHyWeenUK76wwdD53E.tmp&Signature=vO8iW355TAQ8rhdeDuIkLjEzP%2Bg%3D)
 ### Click on the switch
-![布局](https://my-images-api.oss-cn-beijing.aliyuncs.com/images/Click%20on%20the%20switch.gif?Expires=1565305895&OSSAccessKeyId=TMP.hVEAH7tpUBzs7y2DNbhFBFQsTCjjbsj7us2uibZK3GW2EQZS76kRzVMLVk35i5t6BJ3ti9qEgM5HU5SMbBSnqtcGABFXxHwMUUFsp1bSjE7e41uvLsjJo5eM6Be6vY.tmp&Signature=EPEaRvMHWMdKwBZ%2BWYSStm%2FaUmk%3D)
+![布局](https://my-images-api.oss-cn-beijing.aliyuncs.com/images/Click%20on%20the%20switch.gif?Expires=1567831688&OSSAccessKeyId=TMP.hVZhSKirDvXhvo3ym1ChnCHxx9BVKAT9KvtUM9VnZiNutvYNZDwbhT5qu5aBkMwM6C2vK1s9nqU2MZGABDTDW2um3Mi1mssrc91TU96Yh63nUHyWeenUK76wwdD53E.tmp&Signature=RwWUuPi9Dy0cXUQVHCDKn8Z9bC4%3D)
