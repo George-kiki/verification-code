@@ -32,6 +32,6 @@ let validateCode = new ValidateCode(canvas, (code) => {
 - `len` validateCode length
 
 ### verification code
-![布局](https://my-data-api.oss-cn-hongkong.aliyuncs.com/code.png?Expires=1567831706&OSSAccessKeyId=TMP.hVZhSKirDvXhvo3ym1ChnCHxx9BVKAT9KvtUM9VnZiNutvYNZDwbhT5qu5aBkMwM6C2vK1s9nqU2MZGABDTDW2um3Mi1mssrc91TU96Yh63nUHyWeenUK76wwdD53E.tmp&Signature=vO8iW355TAQ8rhdeDuIkLjEzP%2Bg%3D)
+![布局](./verification.png)
 ### Click on the switch
-![布局](https://my-images-api.oss-cn-beijing.aliyuncs.com/images/Click%20on%20the%20switch.gif?Expires=1567831688&OSSAccessKeyId=TMP.hVZhSKirDvXhvo3ym1ChnCHxx9BVKAT9KvtUM9VnZiNutvYNZDwbhT5qu5aBkMwM6C2vK1s9nqU2MZGABDTDW2um3Mi1mssrc91TU96Yh63nUHyWeenUK76wwdD53E.tmp&Signature=RwWUuPi9Dy0cXUQVHCDKn8Z9bC4%3D)
+![布局](./switch.gif)
