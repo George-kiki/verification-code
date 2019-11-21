@@ -32,6 +32,6 @@ let validateCode = new ValidateCode(canvas, (code) => {
 - `len` validateCode length
 
 ### verification code
-![布局](./verification.png)
+![布局](./verificationCode.png)
 ### Click on the switch
 ![布局](./switch.gif)
